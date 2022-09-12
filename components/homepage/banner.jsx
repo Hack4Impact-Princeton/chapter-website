@@ -11,8 +11,8 @@ const Banner = () => (
                 <img src="/images/banner_sample.svg" alt="" />
             </Col>
             <Col md="5">
-                <h1>Building tools for social good</h1>
-                <p>New Princeton chapter launching!</p>
+                <h1>In the nation’s service and in the service of humanity</h1>
+                <p>The Princeton chapter is in its incubating phase this fall. Opportunities to join us open every semester!</p>
             </Col>
         </Row>
       </div>
