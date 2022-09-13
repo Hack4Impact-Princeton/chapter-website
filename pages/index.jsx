@@ -7,6 +7,7 @@ import HeadBanner from '../components/homepage/headbanner';
 import Banner from '../components/homepage/banner';
 import Section from '../components/homepage/section';
 import Nav from '../components/navbar';
+import InvolvedSection from '../components/homepage/involvedsection';
 
 function HomePage() {
   const router = useRouter();
@@ -24,7 +25,7 @@ function HomePage() {
         <Section grey>
           <Container>
             <h2 className="text-center">Fall Recruiting Cycle</h2>
-            {/* <InvolveSection /> */}
+            {<InvolvedSection />}
           </Container>
         </Section>
         {/* <PartnerSection /> */}
