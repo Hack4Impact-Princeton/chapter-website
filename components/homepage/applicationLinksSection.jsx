@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-const InvolvedSection = () => (
+const ApplicationLinksSection = () => (
     <>
     <Container>
         <div id="involved-container">
@@ -55,4 +55,4 @@ const InvolvedSection = () => (
     </>
 );
 
-export default InvolvedSection;
+export default ApplicationLinksSection;
