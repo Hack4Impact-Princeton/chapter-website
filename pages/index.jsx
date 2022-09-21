@@ -22,7 +22,7 @@ function HomePage() {
         <ToastContainer />
         <Banner />
         {/* <OurWorkSection projects={previewProjects} /> */}
-        <Section grey>
+        <Section lightblue>
           <Container>
             <h2 className="text-center">Fall Recruiting Cycle</h2>
             {<ApplicationLinksSection />}

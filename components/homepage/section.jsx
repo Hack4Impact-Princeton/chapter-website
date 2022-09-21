@@ -1,20 +1,20 @@
 import React from 'react';
 
-const getBackground = (grey, darkgrey) => {
-  if (grey) {
-    return 'rgb(250, 251, 252)';
-  }
-  if (darkgrey) {
-    return '#ebeff2';
+/* cold pastel blue background */
+const getBackground = (lightblue) => {
+  if (lightblue) {
+    return 'rgb(242, 248, 255)';
   }
   return undefined;
 };
 
-const Section = ({ children, grey, darkgrey }) => (
+const Section = ({ children, lightblue }) => (
   <section
     className="typical-section"
     style={{
-      background: getBackground(grey, darkgrey),
+      background: getBackground(lightblue),
+      paddingTop: "75px",
+      paddingBottom: "30px"
     }}>
     <div>
       {children}
@@ -27,7 +27,7 @@ const Section = ({ children, grey, darkgrey }) => (
             }
           }
           .typical-section {
-            padding: 100px 0;
+            padding: 100px 100px;
             margin: auto;
           }
         `}
