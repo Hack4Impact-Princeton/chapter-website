@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Spring } from "react-spring/renderprops.cjs";
+import { Spring } from "react-spring";
 import ContentBlock from "./ContentBlock";
 
 const GradientBanner = ({ title, subHeadline, style, arrow, children }) => (
