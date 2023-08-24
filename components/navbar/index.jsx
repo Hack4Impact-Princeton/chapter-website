@@ -1,14 +1,25 @@
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import MobileDropdownToggle from './MobileDropdownToggle';
 import NavLink from './NavLink';
 import useHasScrolledDown from '../../utils/useHasScrolledDown';
+import Logo from './Logo';
 
 function Nav() {
   const router = useRouter();
   const activeRoute = router.pathname;
+  const [mobileNavOpened, setMobileNavOpened] = useState(false);
+
+  const toggleMobileNav = () => setMobileNavOpened(!mobileNavOpened);
+
+  // when active route changes, we probably clicked on a nav link
+  // in this case, collapse the nav dropdown for mobile users
+  useEffect(() => {
+    setMobileNavOpened(false);
+  }, [activeRoute]);
 
   useEffect(() => {
-    const escapeKeyListener = (event) => event.key === 'Escape';
+    const escapeKeyListener = (event) => event.key === 'Escape' && setMobileNavOpened(false);
 
     document.addEventListener('keypress', escapeKeyListener);
     return () => document.removeEventListener('keypress', escapeKeyListener);
@@ -19,7 +30,9 @@ function Nav() {
   return (
     <>
       <header className={hasScrolledDown ? 'header with_background' : 'header'}>
-        <nav className={`container nav_container`}>
+        <nav className={`container nav_container ${mobileNavOpened ? 'nav_toggled' : ''}`}>
+          <Logo />
+          <MobileDropdownToggle toggled={mobileNavOpened} onClick={toggleMobileNav} />
           <div className="dropdown_link_container">
             <NavLink activeRoute={activeRoute} href="/about">
               About Us
@@ -30,7 +43,7 @@ function Nav() {
             <NavLink activeRoute={activeRoute} href="/apply">
               Apply
             </NavLink>
-            <a href="mailto:contact@hack4impact.org">Contact Us</a>
+            <a href="mailto:penn@hack4impact.org">Contact Us</a>
           </div>
         </nav>
       </header>

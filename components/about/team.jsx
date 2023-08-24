@@ -6,7 +6,8 @@ import ExecBoard from '../about/ExecBoard';
 import groupBy from '../../utils/groupBy';
 
 function Team({ members, alumni, execBoard }) {
-  const alumByClass = groupBy(alumni, 'classOf');
+  const alumByClass = (alumni, 'classOf');
+  console.log(execBoard);
   return (
     <Section>
       <Container>
@@ -14,29 +15,29 @@ function Team({ members, alumni, execBoard }) {
         <ExecBoard execBoard={execBoard} />
         <h2 className="p-5 m-3 center">Developers</h2>
         <Row>
-          {members
-            .filter(
-              (member) =>
-                ![
-                  'Co-Director',
-                  'Projects Chair',
-                  'Education Chair',
-                  'Community Chair',
-                  'External Relations Chair',
-                ].includes(member.title),
-            )
+            {/* // .filter(
+            //   (member) =>
+            //     ![
+            //       'Co-Director',
+            //       'Projects Chair',
+            //       'Education Chair',
+            //       'Community Chair',
+            //       'External Relations Chair',
+            //     ].includes(member.title),
+            // ) */}
+              {members
             .map((member) => (
               <MemberIcon
                 key={member.name}
                 name={member.name}
-                // title={member.title}
+                title={member.title}
                 image={member.image}
-                memberSlug={`/team/${member.urlSlug}`}
+                // memberSlug={`/team/${member.urlSlug}`}
                 linkedIn={member.linkedIn}
               />
             ))}
         </Row>
-        <h2 className="p-5 m-3 center"> Alumni </h2>
+        {/* <h2 className="p-5 m-3 center"> Alumni </h2>
         {Object.entries(alumByClass)
           .sort()
           .reverse()
@@ -58,7 +59,7 @@ function Team({ members, alumni, execBoard }) {
                 ))}
               </Row>
             </div>
-          ))}
+          ))} */}
       </Container>
     </Section>
   );

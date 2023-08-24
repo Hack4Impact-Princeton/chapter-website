@@ -5,7 +5,6 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Spring } from 'react-spring';
 
-
 const MissionSection = () => (
   <section className="mission-section">
     <Container>
