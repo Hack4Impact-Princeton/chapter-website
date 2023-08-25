@@ -1,17 +1,16 @@
 import React from "react";
 import Link from "next/link";
-import ContentBlock from "./ContentBlock";
 
-function HomePageProject({ title, description, thumbnail, urlSlug }) {
+function HomePageProject({ title, description, thumbnail }) {
   return (
-    <Link href={`/projects/${urlSlug}`}>
+    <Link href="youtube.com">
       <a>
         <div className="project-item">
-          <img src={thumbnail.url} alt={thumbnail.description} />
+          <img src={thumbnail} />
           <h4>{title}</h4>
-          <ContentBlock content={description.json} />
+          <div>{description}</div>
         </div>
-        <style jsx>{`
+        <style jsx >{`
           @media (max-width: 768px) {
             .project-item {
               margin: 60px 0;
@@ -35,19 +34,19 @@ function HomePageProject({ title, description, thumbnail, urlSlug }) {
             position: relative;
 
             h4 {
-              font-size: 22px;
+              font-size: 100px;
               font-weight: bold;
             }
 
             img {
-              filter: grayscale(20%);
+              filter: grayscale(50%);
               z-index: 1;
               object-fit: cover;
               position: absolute;
               top: 0;
               left: 0;
-              width: 100%;
-              height: 100%;
+              width: 40%;
+              height: 40%;
             }
 
             &::after {

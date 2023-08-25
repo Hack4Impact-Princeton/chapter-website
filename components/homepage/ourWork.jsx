@@ -1,26 +1,30 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Spring, Trail } from "react-spring/renderprops.cjs";
-import Section from "../section";
+import { Spring, Trail } from "react-spring";
+import Section from "./section";
 import ProjectContainer from "../homePageProject";
 import ActionLink from "../actionLink";
+import Projects from "../../projects.json";
 
-function OurWorkSection({ projects }) {
-  const projectContainers = projects.map(
-    ({ title, description, thumbnail, urlSlug }) => (
-      <ProjectContainer
-        title={title}
-        description={description}
-        thumbnail={thumbnail}
-        urlSlug={urlSlug}
-        key={urlSlug}
-      />
-    )
-  );
+function OurWorkSection() {
+  /*const projectContainers = Projects.map((project) => {
+    <ProjectContainer
+      title={project.title}
+      description={project.description}
+      thumbnail={project.thumbnail}
+      key={project.id}
+    />;
+  });*/
 
   return (
     <Section>
       <Container>
+        <ProjectContainer
+                  title="hello"
+                  description="testing the styling"
+                  thumbnail="https://upload.wikimedia.org/wikipedia/en/d/de/AfricanLibraryProjectLogo.png"
+                  key="300"
+                />
         <Spring
           config={{ delay: 600, tension: 100, fraction: 100 }}
           from={{ opacity: 0 }}
@@ -32,7 +36,7 @@ function OurWorkSection({ projects }) {
                 We believe in using tech for good.
               </h2>
               <p className="subtitle text-center">
-                Each semester, we work with three to five non-profits with the
+                Each semester, we work with one to two non-profits with the
                 opportunity to build a great product that solves a core need. We
                 work in small groups led by a product manager and technical lead
                 to scope and develop the application, taking into account our
@@ -44,22 +48,18 @@ function OurWorkSection({ projects }) {
 
         <div className="project-showcase-box">
           <Row className="d-flex justify-content-center">
-            <Trail
-              items={projectContainers}
-              keys={({ urlSlug }) => urlSlug}
-              config={{ delay: 1200 }}
-              from={{ opacity: 0, transform: "translate3d(0,200px,0)" }}
-              to={{ opacity: 100, transform: "translate3d(0,0px,0)" }}
-            >
-              {/* eslint-disable react/display-name */}
-              {(item) => (props) =>
-                (
-                  <Col key={item.key} sm="4" style={props}>
-                    {item}
-                  </Col>
-                )}
-              {/* eslint-enable react/display-name */}
-            </Trail>
+             <Col  >
+              {
+                Projects.map((project) => {
+                  return(<div ><ProjectContainer
+                  title={project.title}
+                  description={project.description}
+                  thumbnail={project.thumbnail}
+                  key={project.id}
+                /></div>)
+                  })
+              }
+            </Col>
           </Row>
         </div>
         <Row style={{ paddingTop: "5px" }}>

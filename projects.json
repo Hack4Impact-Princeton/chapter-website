@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "African Library Project",
+    "description": "insert description about ALP here",
+    "thumbnail": "https://www.africanlibraryproject.org/wp-content/uploads/2020/01/79427502_10156306500277303_6264571381627748352_o.jpg"
+  },
+  {
+    "id": 2,
+    "title": "NJ Tree Foundation",
+    "description": "The NJ Tree Foundation is a state-wide non-profit organization dedicated to planting trees in NJ",
+    "thumbnail": "https://process.filestackapi.com/resize=width:600,height:315,fit:max/quality=value:90/5X0jxZ8JRGucrQtN2vCG"
+  }
+]

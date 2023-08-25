@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "../components/navbar";
 
 import Banner from "../components/homepage/banner";
-//import OurWorkSection from "../components/homepage/ourWork";
+import OurWorkSection from "../components/homepage/ourWork";
 import InvolveSection from "../components/involveSection";
 // import PartnerSection from '../components/homepage/partnerSection';
 // import OtherChapters from '../components/homepage/otherChapters';
@@ -24,7 +24,7 @@ function Home(/*{ chapterLogos, previewProjects }*/) {
       {/*<HeadBanner />*/}
 
       <Banner />
-      {/*<OurWorkSection projects={previewProjects} /> */}
+      <OurWorkSection />
       <Section grey>
         <Container>
           <h2 className="text-center">Get Involved</h2>
