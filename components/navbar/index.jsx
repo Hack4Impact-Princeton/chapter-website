@@ -1,25 +1,46 @@
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
-import NavLink from './NavLink';
-import useHasScrolledDown from '../../utils/useHasScrolledDown';
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import MobileDropdownToggle from "./MobileDropdownToggle";
+import NavLink from "./NavLink";
+import useHasScrolledDown from "../../utils/useHasScrolledDown";
+import Logo from "./Logo";
 
 function Nav() {
   const router = useRouter();
   const activeRoute = router.pathname;
+  const [mobileNavOpened, setMobileNavOpened] = useState(false);
+
+  const toggleMobileNav = () => setMobileNavOpened(!mobileNavOpened);
+
+  // when active route changes, we probably clicked on a nav link
+  // in this case, collapse the nav dropdown for mobile users
+  useEffect(() => {
+    setMobileNavOpened(false);
+  }, [activeRoute]);
 
   useEffect(() => {
-    const escapeKeyListener = (event) => event.key === 'Escape';
+    const escapeKeyListener = (event) =>
+      event.key === "Escape" && setMobileNavOpened(false);
 
-    document.addEventListener('keypress', escapeKeyListener);
-    return () => document.removeEventListener('keypress', escapeKeyListener);
+    document.addEventListener("keypress", escapeKeyListener);
+    return () => document.removeEventListener("keypress", escapeKeyListener);
   }, []);
 
   const hasScrolledDown = useHasScrolledDown();
 
   return (
     <>
-      <header className={hasScrolledDown ? 'header with_background' : 'header'}>
-        <nav className={`container nav_container`}>
+      <header className={hasScrolledDown ? "header with_background" : "header"}>
+        <nav
+          className={`nav_container container ${
+            mobileNavOpened ? "nav_toggled" : ""
+          }`}
+        >
+          <Logo />
+          <MobileDropdownToggle
+            toggled={mobileNavOpened}
+            onClick={toggleMobileNav}
+          />
           <div className="dropdown_link_container">
             <NavLink activeRoute={activeRoute} href="/about">
               About Us
@@ -30,7 +51,7 @@ function Nav() {
             <NavLink activeRoute={activeRoute} href="/apply">
               Apply
             </NavLink>
-            <a href="mailto:contact@hack4impact.org">Contact Us</a>
+            <a href="mailto:penn@hack4impact.org">Contact Us</a>
           </div>
         </nav>
       </header>
@@ -47,7 +68,7 @@ function Nav() {
           align-items: center;
 
           &::before {
-            content: '';
+            content: "";
             background-color: rgba(255, 255, 255, 0);
             transition: background-color 0.2s;
           }

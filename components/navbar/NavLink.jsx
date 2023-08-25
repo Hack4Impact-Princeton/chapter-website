@@ -1,10 +1,13 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 function NavLink({ children, href, activeRoute, ariaLabel }) {
   return (
     <>
       <Link href={href}>
-        <a aria-label={ariaLabel} className={href === activeRoute ? 'active_route' : 'inactive'}>
+        <a
+          aria-label={ariaLabel}
+          className={href === activeRoute ? "active_route" : ""}
+        >
           {children}
         </a>
       </Link>
@@ -12,10 +15,6 @@ function NavLink({ children, href, activeRoute, ariaLabel }) {
         .active_route {
           color: var(--accent-orange);
           font-weight: bold;
-        }
-
-        .inactive {
-            font-size: 50px;
         }
       `}</style>
     </>
