@@ -11,7 +11,15 @@ function AboutPage() {
   // member information and structure
   /* fields: {name: string, image: {url: string}, linkedin: string, classOf: number}
   Not including: memberSlug - note, delete the a tag around the img in membericon*/
-
+  const customStyle = {
+  background: 'linear-gradient(white, var(--secondary-seafoam))',
+  padding: '80px 0',
+  paddingTop: 'calc(60px + var(--nav-height))',
+  '@media (max-width: 800px)': {
+    padding: '40px 0',
+    paddingTop: 'calc(40px + var(--nav-height))',
+  },
+};
   const members = [{memberOne:{
     name: "test",
     imageurl: '/images/<filename>',
@@ -38,6 +46,7 @@ function AboutPage() {
       <GradientBanner
         title="We believe in using tech for good."
         subHeadline="Hack4Impact believes in technology’s huge potential to empower activists and humanitarians to create lasting and impactful social change. We work to foster the wider adoption of software as a tool for social good."
+        style= {customStyle}
         arrow
       />
       <MissionSection />

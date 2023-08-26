@@ -8,7 +8,7 @@ function App({ Component, pageProps }) {
   const activeRoute = router.pathname;
   return (
     <div>
-      <Nav />
+      <Nav/>
       <PageTransition timeout={300} classNames="page-transition">
         <Component {...pageProps} />
       </PageTransition>
