@@ -3,11 +3,22 @@
         "dev": "next dev"
     },
     "dependencies": {
-        "next": "^12.2.5",
+        "@contentful/rich-text-html-renderer": "^16.1.1",
+        "@react-spring/web": "^9.7.3",
+        "next": "^12.3.4",
+        "next-page-transitions": "^1.0.0-beta.2",
+        "node-sass": "^7.0.3",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-spring": "^9.5.2",
         "react-toastify": "^9.0.8",
-        "reactstrap": "^9.2.0"
+        "react-vertical-timeline-component": "^3.6.0",
+        "reactstrap": "^9.2.0",
+        "styled-jsx-plugin-sass": "^1.0.0",
+        "yarn": "^1.22.19"
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1",
+        "styled-jsx-plugin-sass": "^1.0.0",
     }
 }
