@@ -5,7 +5,6 @@ import { PageTransition } from 'next-page-transitions';
 
 function App({ Component, pageProps }) {
   const router = useRouter();
-  const activeRoute = router.pathname;
   return (
     <div>
       <Nav/>
