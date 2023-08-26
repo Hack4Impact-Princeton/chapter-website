@@ -8,17 +8,6 @@ const getAnchor = (link, text, style) => (
     href={link}
   >
     {text}
-    <style jsx>{`
-      .link {
-        font-weight: normal;
-        line-height: 1.2;
-        letter-spacing: normal;
-        font-size: 15px;
-        margin: auto;
-        margin-top: 40px;
-        border-bottom: 1px solid var(--primary-blue);
-      }
-    `}</style>
   </a>
 );
 
