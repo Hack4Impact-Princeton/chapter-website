@@ -27,7 +27,7 @@ function Logo() {
           height: 40px;
           padding: 0 !important;
           margin-right: auto;
-
+        }
           img {
             max-height: 100%;
           }
@@ -46,7 +46,6 @@ function Logo() {
               margin-right: 10px;
             }
           }
-        }
       `}</style>
     </>
   );

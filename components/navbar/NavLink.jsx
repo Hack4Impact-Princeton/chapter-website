@@ -10,7 +10,7 @@ function NavLink({ children, href, activeRoute, ariaLabel }) {
       </Link>
       <style jsx>{`
         .active_route {
-          color: var(--accent-orange);
+          color: var(--accent-black);
           font-weight: bold;
         }
       `}</style>

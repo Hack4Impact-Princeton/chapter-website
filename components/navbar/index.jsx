@@ -43,7 +43,7 @@ function Nav() {
             <NavLink activeRoute={activeRoute} href="/apply">
               Apply
             </NavLink>
-            <a style={{marginLeft: "30px" }}href="mailto:penn@hack4impact.org">Contact Us</a>
+            <a href="mailto:penn@hack4impact.org">Contact Us</a>
           </div>
         </nav>
       </header>
@@ -87,7 +87,7 @@ function Nav() {
 
           display: inherit;
           align-items: inherit;
-
+        }
           :global(a + a) {
             margin-left: 10px;
           }
@@ -108,7 +108,6 @@ function Nav() {
             display: inherit;
             align-items: inherit;
           }
-
           @media (max-width: 1000px) {
             .dropdown_link_container {
               position: fixed;
@@ -152,7 +151,6 @@ function Nav() {
               transform: translateY(0);
             }
           }
-        }
       `}</style>
     </>
   );
