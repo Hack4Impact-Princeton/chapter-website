@@ -43,7 +43,7 @@ function Nav() {
             <NavLink activeRoute={activeRoute} href="/apply">
               Apply
             </NavLink>
-            <a href="mailto:penn@hack4impact.org">Contact Us</a>
+            <a style={{marginLeft: "30px" }}href="mailto:penn@hack4impact.org">Contact Us</a>
           </div>
         </nav>
       </header>
@@ -142,7 +142,7 @@ function Nav() {
               }
 
               :global(a + a) {
-                margin: 0;
+                margin-left: 0;
                 margin-top: 40px;
               }
             }
