@@ -48,14 +48,15 @@ const InvolveSection = () => (
           </a>
         </Link>
         <Row>
-          <BlockQuote
-            text="Working with Hack4Impact was easy, efficient and incredibly
-              productive. They were quick to understand what we were looking to
-              achieve and made the app even better and simpler to use than what
-              I had imagined."
-            author="- Bernardo H. Motta, Ph.D."
-            position="Faculty Coordinator of the USFSP Neighborhood News Bureau"
-          />
+          <p
+          style={{
+            padding: "35px 0 35px 0",
+          }}
+        >
+            Are you a nonprofit struggling without certain software? 
+            Are you in a niched field and you have a clear idea of your problem and think tech can help you? 
+            Hack4Impact is here for you. Reach out to us and we'd love to work with you on a project!
+        </p>
           <div className="text-center">
             <ActionButton white link="/apply/nonprofits">
               Work with us!

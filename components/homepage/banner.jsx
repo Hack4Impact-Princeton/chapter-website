@@ -13,6 +13,7 @@ const Banner = () => (
           <Col md="5">
             <h1>In the Nation’s Service and In the Service of Humanity</h1>
             <br></br>
+            <h4 style={{fontWeight:"bold"}}>We build software for nonprofits.</h4>
             <p>
               We empower engineers, designers, activists, and humanitarians to
               create lasting and impactful social change. If you're a student or

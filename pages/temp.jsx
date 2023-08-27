@@ -16,21 +16,22 @@ import HeadBanner from "../components/homepage/headbanner";
 function Home(/*{ chapterLogos, previewProjects }*/) {
   return (
     <>
-      {/* <div>
-        <Nav />
-      </div> */}
       <Head title="Hack4Impact" />
       <ToastContainer />
       {/*<HeadBanner />*/}
-      <br></br>
-      <Banner />
-      <OurWorkSection />
-      <Section grey>
+      <div style={{paddingBottom:"150px"}}></div>
+      <Banner/>
+      <div style={{paddingBottom:"200px"}}></div>
+      {/*<OurWorkSection />
+      <Section lightblue>
         <Container>
           <h2 className="text-center">Get Involved</h2>
           <InvolveSection />
         </Container>
-      </Section>
+        <br></br>
+        <br></br>
+  </Section>*/}
+      
       {/* <PartnerSection /> 
       <OtherChapters chapterLogos={chapterLogos} /> */}
     </>
