@@ -12,7 +12,7 @@ export default function ServicesDetail({ content, title }) {
                 </Row>
 
                 <Row>
-                    <ContentBlock content={content.json} />
+                    <div>{content}</div>
                 </Row>
             </Container>
         </Section>
