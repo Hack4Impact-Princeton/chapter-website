@@ -15,7 +15,7 @@ function Footer() {
               For all inquiries of partnership or sponsorship, please contact us at{' '}
               {/* TODO: Update this for your university! */}
               <a className="email-link" href="mailto:penn@hack4impact.org">
-                penn@hack4impact.org
+                princeton@hack4impact.org
               </a>
               .
             </p>
