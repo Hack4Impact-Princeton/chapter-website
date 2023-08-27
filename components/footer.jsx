@@ -37,20 +37,20 @@ function Footer() {
             </ul>
           </div>
           <div className="col-md-2">
-            <h4>Apply Now</h4>
+            <h4>Join Us Now</h4>
             <ul>
               <li>
-                <Link href="/apply">
-                  <a>How to apply</a>
+                <Link href="/join">
+                  <a>How to join</a>
                 </Link>
               </li>
               <li>
-                <Link href="/apply/students">
+                <Link href="/join/students">
                   <a>Students</a>
                 </Link>
               </li>
               <li>
-                <Link href="/apply/nonprofits">
+                <Link href="/join/nonprofits">
                   <a>Non-profits</a>
                 </Link>
               </li>

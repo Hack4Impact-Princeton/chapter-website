@@ -39,8 +39,8 @@ function Nav() {
             <NavLink activeRoute={activeRoute} href="/projects">
               Our Work
             </NavLink>
-            <NavLink activeRoute={activeRoute} href="/apply">
-              Apply
+            <NavLink activeRoute={activeRoute} href="/join">
+              Join Us
             </NavLink>
             <a href="mailto:princeton@hack4impact.org">Contact Us</a>
           </div>
