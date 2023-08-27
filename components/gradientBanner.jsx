@@ -54,44 +54,52 @@ const GradientBanner = ({ title, subHeadline, style, arrow, children }) => (
     </section>
     {arrow && <div className="arrow" />}
     <style jsx>{`
-      $tablet-width: 800px;
-
       section {
-        background: linear-gradient(white, var(--secondary-seafoam));
-        padding: 80px 0;
-        padding-top: calc(60px + var(--nav-height));
+  background: linear-gradient(white, var(--secondary-seafoam));
+  padding: 80px 0;
+  padding-top: calc(60px + var(--nav-height));
+}
 
-        @media (max-width: $tablet-width) {
-          padding: 40px 0;
-          padding-top: calc(40px + var(--nav-height));
-        }
-      }
+@media (max-width: 800px) {
+  section {
+    padding: 40px 0;
+    padding-top: calc(40px + var(--nav-height));
+  }
+}
 
-      .main-headline h1 {
-        font-size: 60px;
-        font-weight: bold;
+.main-headline h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
 
-        @media (max-width: $tablet-width) {
-          font-size: 36px;
-        }
-      }
-      .sub-headline {
-        max-width: 100%;
-        padding: 0 10%;
-        margin-top: 20px;
-      }
-      p {
-        font-size: 20px;
-        margin-bottom: 28px auto;
-      }
-      .arrow {
-        margin: auto;
-        width: 0;
-        height: 0;
-        border-left: 100px solid transparent;
-        border-right: 100px solid transparent;
-        border-top: 60px solid var(--secondary-seafoam);
-      }
+@media (max-width: 800px) {
+  .main-headline h1 {
+    font-size: 36px;
+  }
+}
+
+.sub-headline {
+  max-width: 100%;
+  padding: 0 10%;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrow {
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 60px solid var(--secondary-seafoam);
+}
+
     `}</style>
   </div>
 );
