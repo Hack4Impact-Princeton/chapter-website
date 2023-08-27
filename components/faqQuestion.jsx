@@ -1,6 +1,6 @@
-import React from "react";
-import { Collapse } from "reactstrap";
-import ContentBlock from "./ContentBlock";
+import React from 'react';
+import { Collapse } from 'reactstrap';
+import ContentBlock from './ContentBlock';
 
 function FaqQuestion({ question, answer }) {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -8,10 +8,7 @@ function FaqQuestion({ question, answer }) {
     <>
       <div className="item">
         {/* eslint-disable */}
-        <div
-          className={`question ${isOpen ? "active" : ""}`}
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <div className={`question ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
           <a>{question}</a>
           <a className="expand-sign">+</a>
         </div>

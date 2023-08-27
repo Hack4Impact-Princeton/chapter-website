@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 const getBackground = (grey, darkgrey) => {
   if (grey) {
-    return "rgb(250, 251, 252)";
+    return 'rgb(250, 251, 252)';
   }
   if (darkgrey) {
-    return "#ebeff2";
+    return '#ebeff2';
   }
   return undefined;
 };
@@ -15,9 +15,8 @@ const QuoteSection = ({ children, grey, darkgrey }) => (
     className="typical-section"
     style={{
       background: getBackground(grey, darkgrey),
-      padding: "40px 0;",
-    }}
-  >
+      padding: '40px 0;',
+    }}>
     <div>
       {children}
       <style jsx>

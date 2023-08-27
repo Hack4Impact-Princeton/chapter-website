@@ -1,6 +1,6 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import Link from "next/link";
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import Link from 'next/link';
 
 function Footer() {
   return (
@@ -9,18 +9,13 @@ function Footer() {
         <Row>
           <Col md="5" xs="12" className="footer-left-div">
             <div className="footer-logo-box">
-              <img
-                src="/images/logo-white.svg"
-                height="60"
-                width="240"
-                alt="Hack4Impact logo"
-              />
+              <img src="/images/logo-white.svg" height="60" width="240" alt="Hack4Impact logo" />
             </div>
             <p>
-              For all inquiries of partnership or sponsorship, please contact us
-              at {/* TODO: Update this for your university! */}
-              <a className="email-link" href="mailto:princeton@hack4impact.org">
-                princeton@hack4impact.org
+              For all inquiries of partnership or sponsorship, please contact us at{' '}
+              {/* TODO: Update this for your university! */}
+              <a className="email-link" href="mailto:penn@hack4impact.org">
+                penn@hack4impact.org
               </a>
               .
             </p>
@@ -66,18 +61,16 @@ function Footer() {
             <ul>
               {/* TODO: Update these for your university! */}
               <li>
-                <a href="https://www.linkedin.com/company/hack4impact/mycompany/">
-                  LinkedIn
-                </a>
+                <a href="https://www.linkedin.com/company/hack4impact/mycompany/">LinkedIn</a>
               </li>
               <li>
-                <a href="https://github.com/Hack4Impact-Princeton">Github</a>
+                <a href="https://github.com/hack4impact-upenn">Github</a>
               </li>
               <li>
                 <a href="https://medium.com/@hack4impact">Blog</a>
               </li>
               <li>
-                <a href="mailto:princeton@hack4impact.org">Email</a>
+                <a href="mailto:penn@hack4impact.org">Email</a>
               </li>
               <li>
                 <a href="https://www.facebook.com/Hack4Impact">Facebook</a>

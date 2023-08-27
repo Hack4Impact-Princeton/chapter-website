@@ -1,8 +1,8 @@
-import React from "react";
-import { Row, Col } from "reactstrap";
-import BlockQuote from "./blockQuote";
-import ActionButton from "./actionButton";
-import Link from "next/link";
+import React from 'react';
+import { Row, Col } from 'reactstrap';
+import BlockQuote from './blockQuote';
+import ActionButton from './actionButton';
+import Link from 'next/link';
 
 const InvolveSection = () => (
   <Row>
@@ -11,24 +11,18 @@ const InvolveSection = () => (
         <h3 className="text-title text-center">Students</h3>
         <Link href="/apply/students">
           <a>
-            <img
-              src="/images/retreat-2020.jpg"
-              className="img-fluid"
-              alt="Sp18 team"
-            />
+            <img src="/images/retreat-2020.jpg" className="img-fluid" alt="Sp18 team" />
           </a>
         </Link>
       </div>
       <Row>
         <p
           style={{
-            padding: "38px 0 35px 0",
-          }}
-        >
-          Are you passionate about software and Social Impact? Are you looking
-          to join a unique and close-knit community? Join Us! Our mission
-          provides a distinct experience to develop technical skills and
-          interact with nonprofit clients all while applying your skills to
+            padding: '38px 0 35px 0',
+          }}>
+          Are you passionate about software and Social Impact? Are you looking to join a unique and
+          close-knit community? Join Us! Our mission provides a distinct experience to develop
+          technical skills and interact with nonprofit clients all while applying your skills to
           impact real lives.
         </p>
 

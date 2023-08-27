@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import ContentBlock from "./ContentBlock";
+import React from 'react';
+import Link from 'next/link';
+import ContentBlock from './ContentBlock';
 
 function HomePageProject({ title, description, thumbnail, urlSlug }) {
   return (
@@ -52,11 +52,8 @@ function HomePageProject({ title, description, thumbnail, urlSlug }) {
 
             &::after {
               z-index: 2;
-              content: "";
-              background: linear-gradient(
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.9)
-              );
+              content: '';
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
               position: absolute;
               top: 0;
               left: 0;
@@ -73,8 +70,7 @@ function HomePageProject({ title, description, thumbnail, urlSlug }) {
             }
           }
           .project-item:hover {
-            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2),
-              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           }
           p {
             margin: 0px;

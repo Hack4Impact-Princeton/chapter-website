@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import { Spring } from "react-spring";
-import ContentBlock from "./ContentBlock";
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import { Spring } from 'react-spring';
+import ContentBlock from './ContentBlock';
 
 const GradientBanner = ({ title, subHeadline, style, arrow, children }) => (
   <div>
@@ -11,9 +11,8 @@ const GradientBanner = ({ title, subHeadline, style, arrow, children }) => (
           <Col md="12" className="text-center">
             <Spring
               config={{ delay: 700 }}
-              from={{ opacity: 0, transform: "translate3d(-100px,0,0)" }}
-              to={{ opacity: 100, transform: "translate3d(0,0px,0)" }}
-            >
+              from={{ opacity: 0, transform: 'translate3d(-100px,0,0)' }}
+              to={{ opacity: 100, transform: 'translate3d(0,0px,0)' }}>
               {(props) => (
                 <div style={props} className="main-headline">
                   <h1>{title}</h1>
@@ -24,9 +23,8 @@ const GradientBanner = ({ title, subHeadline, style, arrow, children }) => (
           {subHeadline && (
             <Spring
               config={{ delay: 500 }}
-              from={{ opacity: 0, transform: "translate3d(-100px,0,0)" }}
-              to={{ opacity: 100, transform: "translate3d(0,0px,0)" }}
-            >
+              from={{ opacity: 0, transform: 'translate3d(-100px,0,0)' }}
+              to={{ opacity: 100, transform: 'translate3d(0,0px,0)' }}>
               {(props) => (
                 <div style={props} className="text-center sub-headline">
                   {/* if it has a json key, we'll assume it's Rich Text from Contentful */}
@@ -42,9 +40,8 @@ const GradientBanner = ({ title, subHeadline, style, arrow, children }) => (
           <Row className="w-100 pt-4">
             <Spring
               config={{ delay: 550 }}
-              from={{ opacity: 0, transform: "translate3d(-100px,0,0)" }}
-              to={{ opacity: 100, transform: "translate3d(0,0px,0)" }}
-            >
+              from={{ opacity: 0, transform: 'translate3d(-100px,0,0)' }}
+              to={{ opacity: 100, transform: 'translate3d(0,0px,0)' }}>
               {(props) => (
                 <Col className="d-flex justify-content-center" style={props}>
                   {children}

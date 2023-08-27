@@ -1,23 +1,13 @@
-import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Footer from '../components/footer';
 import Nav from '../components/navbar';
-import { initializeGA, logPage } from '../components/Analytics';
 import { PageTransition } from 'next-page-transitions';
 
 function App({ Component, pageProps }) {
   const router = useRouter();
-  const activeRoute = router.pathname;
-
-  // ping Google Analytics on every route change
-  useEffect(() => {
-    initializeGA();
-    logPage();
-  }, [activeRoute]);
-
   return (
     <div>
-      <Nav />
+      <Nav/>
       <PageTransition timeout={300} classNames="page-transition">
         <Component {...pageProps} />
       </PageTransition>

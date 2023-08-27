@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 //  import Section from './section';
-import QuoteSection from "./quoteSection";
+import QuoteSection from './quoteSection';
 
-import { Container, Row, Col } from "reactstrap";
-import ContentBlock from "./ContentBlock";
+import { Container, Row, Col } from 'reactstrap';
+import ContentBlock from './ContentBlock';
 
 const Quote = ({ quote, source, sourceTitle }) => (
   <QuoteSection grey>
@@ -27,7 +27,7 @@ const Quote = ({ quote, source, sourceTitle }) => (
         font-weight: bold;
       }
       .project-body-quote::before {
-        content: "“";
+        content: '“';
         font-size: 48px;
         font-weight: bold;
         line-height: 0;
