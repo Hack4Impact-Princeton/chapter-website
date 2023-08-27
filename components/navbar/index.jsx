@@ -149,6 +149,8 @@ function Nav() {
   .nav_toggled > .dropdown_link_container {
     opacity: 1;
     transform: translateY(0);
+    font-size: 48px;
+    margin-bottom: 10px;
   }
 }
 
