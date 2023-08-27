@@ -1,6 +1,9 @@
-import React from 'react';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import ContentBlock from '../ContentBlock';
+import React from "react";
+import {
+    VerticalTimeline,
+    VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import ContentBlock from "../ContentBlock";
 
 function Icon({ src, alt }) {
     return (
@@ -24,9 +27,10 @@ function Timeline({ steps }) {
                 steps.map(({ header, body, image }) => (
                     <VerticalTimelineElement
                         className="vertical-timeline-element-work"
-                        iconStyle={{ background: 'var(--accent-orange)', color: '#fff' }}
+                        iconStyle={{ background: "var(--accent-orange)", color: "#fff" }}
                         icon={<Icon src={image.url} alt={image.description} />}
-                        key={header}>
+                        key={header}
+                    >
                         <h3 className="vertical-timeline-element-title">{header}</h3>
                         <ContentBlock content={body.json} />
                     </VerticalTimelineElement>
