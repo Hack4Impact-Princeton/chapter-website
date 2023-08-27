@@ -28,7 +28,7 @@ const InvolveSection = () => (
           impact real lives.
         </p>
 
-        <div className="text-center">
+        <div className="text-center" sx={{ justifyContent: "center" }}>
           <ActionButton white link="/apply/students">
             Join Us!
           </ActionButton>
@@ -41,9 +41,9 @@ const InvolveSection = () => (
         <Link href="/apply/students">
           <a>
             <img
-              src="/images/philly_food_finder.jpg"
+              src="/images/partner.png"
               className="img-fluid"
-              alt="Philadelphia Mayor’s Recognition"
+              alt="Partner with Us"
             />
           </a>
         </Link>
