@@ -93,7 +93,7 @@ function Nav() {
 .nav_container a,
 .nav_container a:visited {
   display: inline-block;
-  color: var(--primary-dark);
+  color: var(--accent-black);
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -136,7 +136,7 @@ function Nav() {
 
   .dropdown_link_container a,
   .dropdown_link_container a:visited {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
     padding: 0;
   }
