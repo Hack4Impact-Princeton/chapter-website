@@ -1,84 +1,43 @@
-import React from "react";
-import Banner from "../components/homepage/banner";
-import OurWorkSection from "../components/homepage/ourWork";
-import InvolveSection from "../components/involveSection";
-import OtherChapters from "../components/homepage/otherChapters";
-import { ToastContainer } from "react-toastify";
-import Head from "../components/head";
-import fetchContent from "../utils/fetchContent";
-import Section from "../components/section";
-import { Container } from "reactstrap";
+import { useRouter } from 'next/router';
+import { ToastContainer } from 'react-toastify';
+import { Container } from 'reactstrap';
 
-function Home({ chapterLogos, previewProjects }) {
+import Head from '../components/homepage/head';
+import HeadBanner from '../components/homepage/headbanner';
+import Banner from '../components/homepage/banner';
+import Section from '../components/homepage/section';
+import Nav from '../components/navbar';
+import ApplicationLinksSection from '../components/homepage/applicationLinksSection';
+
+function HomePage() {
+  const router = useRouter();
+  const activeRoute = router.pathname;
+
   return (
     <>
-      <Head title="Hack4Impact" />
-      <ToastContainer />
-      <Banner />
-      <OurWorkSection projects={previewProjects} />
-      <Section grey>
-        <Container>
-          <h2 className="text-center">Get Involved</h2>
-          <InvolveSection />
-        </Container>
-      </Section>
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" }}>
+        <h1>We at Hack4Impact Princeton will be back soon!</h1>
+      </div>
+      {/* <div style={{display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "100%"}}>
+          <h1>We at Hack4Impact Princeton will be back soon!</h1>
+        </div>
+        {/* <HeadBanner />
+        <Head title="Hack4Impact Princeton" /> */}
+      {/* TODO: figure out why NavBar looks ugly/doesn't style properly */}
+      {/* <Nav /> */}
+      {/* {/* <ToastContainer />
+        <Banner /> */}
+      {/* <OurWorkSection projects={previewProjects} /> */}
+      {/* {/* <Section lightblue>
+          <Container>
+            <h2 className="text-center">Fall Recruiting Cycle</h2>
+            {<ApplicationLinksSection />}
+          </Container>
+        </Section> */}
       {/* <PartnerSection /> */}
-      <OtherChapters chapterLogos={chapterLogos} />
+      {/* <OtherChapters chapterLogos={chapterLogos} /> */}
     </>
   );
 }
 
-export default Home;
-
-export async function getStaticProps() {
-  const {
-    chapterCollection,
-    pennWebsiteLayout: { projectsCollection },
-  } = await fetchContent(`
-  {
-    chapterCollection {
-      items {
-        name
-        websiteLink
-        socialMediaLink
-        codeRepoLink
-        universityLogo {
-          url
-        }
-      }
-    }
-    pennWebsiteLayout(id: "${process.env.LAYOUT_ENTRY_ID}") {
-      projectsCollection(limit: 3) {
-        items {
-          title
-          description {
-            json
-          }
-          thumbnail {
-            url
-            description
-          }
-          urlSlug
-        }
-      }
-    }
-  }
-  `);
-  return {
-    props: {
-      chapterLogos: chapterCollection.items.map(
-        ({ websiteLink, socialMediaLink, codeRepoLink, ...chapter }) => ({
-          ...chapter,
-          // not all chapters have a website,
-          // so we need to have some solid fallbacks
-          link:
-            websiteLink ??
-            socialMediaLink ??
-            codeRepoLink ??
-            "https://hack4impact.org",
-        })
-      ),
-      previewProjects: projectsCollection.items,
-    },
-  };
-}
+export default HomePage;
