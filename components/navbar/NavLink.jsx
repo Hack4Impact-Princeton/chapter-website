@@ -13,6 +13,12 @@ function NavLink({ children, href, activeRoute, ariaLabel }) {
           color: var(--accent-black);
           font-weight: bold;
         }
+        .link {
+          color: black;
+        }
+        .link:hover {
+          color: var(--accent-orange);
+        }
 
         .inactive {
             font-size: 50px;
