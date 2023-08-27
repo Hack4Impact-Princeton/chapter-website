@@ -1,12 +1,11 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 // import { Spring, config } from 'react-spring/renderprops.cjs';
-import ActionButton from "../actionButton";
 
 const Banner = () => (
   <>
-    <Container fluid className="container">
-      <div className="bannerCont">
+  <Container fluid className="container">
+      <div className='bannerCont'>
         <Row className="d-flex align-items-center">
           <Col md="7">
             <img src="/images/banner_sample.svg" alt="" />

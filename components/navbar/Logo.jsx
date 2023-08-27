@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 function Logo() {
   return (
@@ -9,13 +9,13 @@ function Logo() {
           <img
             className="university-logo"
             height="40"
-            src="https://images.ctfassets.net/dz50cburkkql/4jam17HkDyKIGIj41lVoIz/dda403684c0d1008cb1be62672adbe41/logo.png?h=250"
-            alt=""
+            src="/images/Princeton_seal.svg.png"
+            alt="pton seal"
           />
           <img
             className="hack4impact-logo"
             height="40"
-            src="/images/colored-logo.svg"
+            src="/images/logo.svg"
             alt="Hack4Impact logo"
           />
         </a>
@@ -27,7 +27,7 @@ function Logo() {
           height: 40px;
           padding: 0 !important;
           margin-right: auto;
-
+        }
           img {
             max-height: 100%;
           }
@@ -46,7 +46,6 @@ function Logo() {
               margin-right: 10px;
             }
           }
-        }
       `}</style>
     </>
   );
