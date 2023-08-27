@@ -9,8 +9,8 @@ function Logo() {
           <img
             className="university-logo"
             height="40"
-            src="https://images.ctfassets.net/dz50cburkkql/4jam17HkDyKIGIj41lVoIz/dda403684c0d1008cb1be62672adbe41/logo.png?h=250"
-            alt=""
+            src="/images/Princeton_seal.svg.png"
+            alt="pton seal"
           />
           <img
             className="hack4impact-logo"
