@@ -54,7 +54,7 @@ function OurWorkSection() {
           <Row className="d-flex justify-content-center">
             {Projects.map((project) => {
               return (
-                <Col>
+                <Col key={project.id}>
                   <ProjectContainer
                     title={project.title}
                     description={project.description}

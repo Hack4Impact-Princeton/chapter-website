@@ -16,9 +16,9 @@ import HeadBanner from "../components/homepage/headbanner";
 function Home(/*{ chapterLogos, previewProjects }*/) {
   return (
     <>
-      <div>
+      {/* <div>
         <Nav />
-      </div>
+      </div> */}
       <Head title="Hack4Impact" />
       <ToastContainer />
       {/*<HeadBanner />*/}
