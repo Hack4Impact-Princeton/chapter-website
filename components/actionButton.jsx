@@ -30,7 +30,7 @@ function Anchor({ link, white, className, children, ...props }) {
           color: var(--black);
         }
         .action-button {
-          background: var(--primary-blue);
+          background: #0069ca;
           font-weight: bold;
           color: white;
         }

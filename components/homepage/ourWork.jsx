@@ -13,7 +13,7 @@ function OurWorkSection() {
     letterSpacing: "normal",
     fontSize: "15px",
     margin: "auto",
-    borderBottom: "1px solid var(--primary-blue)",
+    borderBottom: "1px solid blue",
     marginTop: "40px",
   };
 
@@ -59,6 +59,7 @@ function OurWorkSection() {
                     title={project.title}
                     description={project.description}
                     thumbnail={project.thumbnail}
+                    url={project.url}
                     key={project.id}
                   />
                 </Col>

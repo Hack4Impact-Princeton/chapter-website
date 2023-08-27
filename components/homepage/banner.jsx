@@ -1,22 +1,37 @@
-import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
 // import { Spring, config } from 'react-spring/renderprops.cjs';
+import ActionButton from "../actionButton";
 
 const Banner = () => (
   <>
-  <Container fluid className="container">
-      <div className='bannerCont'>
+    <Container fluid className="container">
+      <div className="bannerCont">
         <Row className="d-flex align-items-center">
-            <Col md="7">
-                <img src="/images/banner_sample.svg" alt="" />
-            </Col>
-            <Col md="5">
-                <h1>In the nation’s service and in the service of humanity</h1>
-                <p>The Princeton chapter is in its incubating phase this fall. Opportunities to join us open every semester!</p>
-            </Col>
+          <Col md="7">
+            <img src="/images/banner_sample.svg" alt="" />
+          </Col>
+          <Col md="5">
+            <h1>In the Nation’s Service and In the Service of Humanity</h1>
+            <br></br>
+            <p>
+              We empower engineers, designers, activists, and humanitarians to
+              create lasting and impactful social change. If you're a student or
+              a nonprofit, we'd love to get in touch!
+            </p>
+            <br></br>
+            <div>
+              <ActionButton className="mr-3" link="/apply">
+                Apply
+              </ActionButton>
+              <ActionButton white link="/about">
+                Learn More
+              </ActionButton>
+            </div>
+          </Col>
         </Row>
       </div>
-  </Container>
+    </Container>
     <style jsx>{`
       $tablet-width: 800px;
 

@@ -5,6 +5,7 @@ function NavLink({ children, href, activeRoute, ariaLabel }) {
     <>
       <Link href={href}>
         <a
+          style={{ marginLeft: "30px" }}
           aria-label={ariaLabel}
           className={href === activeRoute ? "active_route" : ""}
         >
@@ -13,7 +14,7 @@ function NavLink({ children, href, activeRoute, ariaLabel }) {
       </Link>
       <style jsx>{`
         .active_route {
-          color: var(--accent-orange);
+          color: var(--accent-black);
           font-weight: bold;
         }
       `}</style>

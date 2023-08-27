@@ -22,7 +22,7 @@ function Home(/*{ chapterLogos, previewProjects }*/) {
       <Head title="Hack4Impact" />
       <ToastContainer />
       {/*<HeadBanner />*/}
-
+      <br></br>
       <Banner />
       <OurWorkSection />
       <Section grey>
