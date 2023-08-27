@@ -9,7 +9,6 @@ function Nav() {
   const router = useRouter();
   const activeRoute = router.pathname;
   const [mobileNavOpened, setMobileNavOpened] = useState(false);
-
   const toggleMobileNav = () => setMobileNavOpened(!mobileNavOpened);
 
   // when active route changes, we probably clicked on a nav link
@@ -146,7 +145,7 @@ function Nav() {
               }
             }
 
-            &.nav_toggled > .dropdown_link_container {
+            .nav_toggled > .dropdown_link_container {
               opacity: 1;
               transform: translateY(0);
             }
