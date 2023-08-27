@@ -86,10 +86,11 @@ function Footer() {
           padding-top: 70px;
           color: white;
           font-size: 15px;
+        }
 
-          .footer-logo-box {
-            margin-bottom: 20px;
-          }
+        .footer-logo-box {
+          margin-bottom: 20px;
+        }
 
           h4 {
             font-size: inherit;
@@ -116,7 +117,6 @@ function Footer() {
               padding-bottom: 5px;
             }
           }
-        }
       `}</style>
     </section>
   );

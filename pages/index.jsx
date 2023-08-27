@@ -2,7 +2,6 @@ import React from "react";
 import Banner from "../components/homepage/banner";
 import OurWorkSection from "../components/homepage/ourWork";
 import InvolveSection from "../components/involveSection";
-import PartnerSection from "../components/homepage/partnerSection";
 import OtherChapters from "../components/homepage/otherChapters";
 import { ToastContainer } from "react-toastify";
 import Head from "../components/head";
