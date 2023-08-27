@@ -15,7 +15,7 @@ function Footer() {
               For all inquiries of partnership or sponsorship, please contact us at{' '}
               {/* TODO: Update this for your university! */}
               <a className="email-link" href="mailto:penn@hack4impact.org">
-                penn@hack4impact.org
+                princeton@hack4impact.org
               </a>
               .
             </p>
@@ -64,13 +64,13 @@ function Footer() {
                 <a href="https://www.linkedin.com/company/hack4impact/mycompany/">LinkedIn</a>
               </li>
               <li>
-                <a href="https://github.com/hack4impact-upenn">Github</a>
+                <a href="https://github.com/hack4impact-princeton">Github</a>
               </li>
               <li>
                 <a href="https://medium.com/@hack4impact">Blog</a>
               </li>
               <li>
-                <a href="mailto:penn@hack4impact.org">Email</a>
+                <a href="mailto:princeton@hack4impact.org">Email</a>
               </li>
               <li>
                 <a href="https://www.facebook.com/Hack4Impact">Facebook</a>
@@ -81,42 +81,47 @@ function Footer() {
       </Container>
       <style jsx>{`
         .footer-section {
-          background-color: var(--primary-blue);
-          min-height: 350px;
-          padding-top: 70px;
-          color: white;
-          font-size: 15px;
-        }
+  background-color: var(--primary-blue);
+  min-height: 350px;
+  padding-top: 70px;
+  color: white;
+  font-size: 15px;
+}
 
-        .footer-logo-box {
-          margin-bottom: 20px;
-        }
+.footer-logo-box {
+  margin-bottom: 20px;
+}
 
-          h4 {
-            font-size: inherit;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 15px;
-          }
-          a,
-          a:visited {
-            color: inherit;
-          }
-          a.email-link {
-            text-decoration: underline !important;
-          }
-          a:hover {
-            color: var(--secondary-seafoam);
-          }
+.footer-section h4 {
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 
-          ul {
-            list-style-type: none;
-            padding: 0;
+.footer-section a,
+.footer-section a:visited {
+  color: inherit;
+}
 
-            li {
-              padding-bottom: 5px;
-            }
-          }
+.footer-section a.email-link {
+  text-decoration: underline !important;
+  margin-left: 0;
+}
+
+.footer-section a:hover {
+  color: var(--secondary-seafoam);
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  padding-bottom: 5px;
+}
+
       `}</style>
     </section>
   );
