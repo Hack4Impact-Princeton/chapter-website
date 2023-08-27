@@ -5,13 +5,14 @@ import { PageTransition } from 'next-page-transitions';
 
 function App({ Component, pageProps }) {
   const router = useRouter();
+  const shouldRenderNavAndFooter = router.pathname !== '/'
   return (
     <div>
-      <Nav/>
+      {shouldRenderNavAndFooter && <Nav/>}
       <PageTransition timeout={300} classNames="page-transition">
         <Component {...pageProps} />
       </PageTransition>
-      <Footer />
+      {shouldRenderNavAndFooter && <Footer />}
       <style jsx global>{`
         .page-transition-enter {
           opacity: 0;

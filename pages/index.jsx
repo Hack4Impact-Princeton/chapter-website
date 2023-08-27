@@ -15,7 +15,7 @@ function HomePage() {
 
   return (
     <>
-      <div style={{display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "100%"}}>
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" }}>
         <h1>We at Hack4Impact Princeton will be back soon!</h1>
       </div>
       {/* <div style={{display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "100%"}}>
@@ -26,7 +26,7 @@ function HomePage() {
       {/* TODO: figure out why NavBar looks ugly/doesn't style properly */}
       {/* <Nav /> */}
       {/* {/* <ToastContainer />
-        <Banner /> */} 
+        <Banner /> */}
       {/* <OurWorkSection projects={previewProjects} /> */}
       {/* {/* <Section lightblue>
           <Container>
