@@ -20,8 +20,8 @@ function Nav() {
   useEffect(() => {
     const escapeKeyListener = (event) => event.key === 'Escape' && setMobileNavOpened(false);
 
-    document.addEventListener('keypress', escapeKeyListener);
-    return () => document.removeEventListener('keypress', escapeKeyListener);
+    document.addEventListener("keypress", escapeKeyListener);
+    return () => document.removeEventListener("keypress", escapeKeyListener);
   }, []);
 
   const hasScrolledDown = useHasScrolledDown();

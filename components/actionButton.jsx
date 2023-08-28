@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 function Anchor({ link, white, className, children, ...props }) {
   return (
@@ -7,7 +7,10 @@ function Anchor({ link, white, className, children, ...props }) {
       <a
         {...props}
         href={link}
-        className={`${className ?? ''} ${white ? 'white-button' : 'action-button'}`}>
+        className={`${className ?? ""} ${
+          white ? "white-button" : "action-button"
+        }`}
+      >
         {children}
       </a>
       <style jsx>{`
@@ -27,7 +30,7 @@ function Anchor({ link, white, className, children, ...props }) {
           color: var(--black);
         }
         .action-button {
-          background: var(--primary-blue);
+          background: #0069ca;
           font-weight: bold;
           color: white;
         }
@@ -42,7 +45,7 @@ function Anchor({ link, white, className, children, ...props }) {
 }
 
 const ActionButton = (props) => {
-  return props?.link.startsWith('/') ? (
+  return props?.link.startsWith("/") ? (
     <Link href={props?.link}>
       <Anchor {...props} />
     </Link>
