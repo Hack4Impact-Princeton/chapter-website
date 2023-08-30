@@ -57,7 +57,7 @@ function NonProfits({
                     <li>
                         <strong>Basic website design and development</strong>
                         <br />
-                        We do not build websites that are purely content-based, suhc as
+                        We do not build websites that are purely content-based, such as
                         Wordpress blogs or landing pages.
                     </li>
                     <li>
@@ -67,6 +67,24 @@ function NonProfits({
                         Salesforce or Drupal.
                     </li>
                 </ul>
+            </>
+        }, {
+            question: "What does it look like to work with Hack4Impact?", answer: <>
+                Before the development semester{'('}s{')'}:
+                <ul>
+                    <li>The first step is an initial screening meeting with our external outreach chair where you can discuss your nonprofit's needs, any ideas you have, the feasibility of the project. You don't come to us with concrete ideas, but the more you have, the better</li>
+                    <li>Once accepted, you will have a follow-up meeting with the external outreach chair and the team's Product Manager to discuss your specific needs for the project {'('}e.g. features that the project must have{')'}. During this meeting, you and the Product Manager will decide on a minimum viable producet {'('}MVP{')'} that we feel we can comfortably create by the decided deadline. At some point, you will also communicate any "stretch" goals you have for the product - features that would be nice to have but that are not mandatory.</li>
+                </ul>
+                During the development semester{'('}s{')'}:
+                <ul>
+                    <li>Depending on availability and need, we will set up weekly or biweekly meetings where we can update you on current progress and request feedback on designs and other product ideas.</li>
+                </ul>
+                After the development semester{'('}s{')'}:
+                <ul>
+                    <li>We will hand off the project to you, usually in the form of a publicly accessible URL. During the period following the hand-off, you may request that we fix any bugs that you or your users may encounter.</li>
+                </ul>
+
+
             </>
         }
     ]
@@ -81,7 +99,6 @@ function NonProfits({
                 }>
             </GradientBanner>
             <ServicesDetail title="Interested in working with Hack4Impact?" content={description} />
-            {/* {timelineCollection && <ApplicationProcess steps={timelineCollection.items} />} */}
             {faqsCollection && <Faq questions={faqsCollection} />}
         </>
     );

@@ -36,7 +36,7 @@ const InvolveSection = () => (
     <Col md="5" className="offset-md-2">
       <div className="involved-container">
         <h3 className="text-title text-center">Nonprofits</h3>
-        <Link href="/apply/students">
+        <Link href="/join/students">
           <a>
             <img
               src="/images/philly_food_finder.jpg"
@@ -55,7 +55,7 @@ const InvolveSection = () => (
             position="Faculty Coordinator of the USFSP Neighborhood News Bureau"
           />
           <div className="text-center">
-            <ActionButton white link="/apply/nonprofits">
+            <ActionButton white link="/join/nonprofits">
               Work with us!
             </ActionButton>
           </div>
