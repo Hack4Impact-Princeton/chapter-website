@@ -33,8 +33,8 @@ function Nav() {
           <Logo />
           <MobileDropdownToggle toggled={mobileNavOpened} onClick={toggleMobileNav} />
           <div className="dropdown_link_container">
-            <NavLink activeRoute={activeRoute} href="/about">
-              About Us
+            <NavLink activeRoute={activeRoute} href="/team">
+              Our Team
             </NavLink>
             <NavLink activeRoute={activeRoute} href="/projects">
               Our Work

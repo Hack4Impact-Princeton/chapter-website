@@ -14,7 +14,7 @@ function Footer() {
             <p>
               For all inquiries of partnership or sponsorship, please contact us at{' '}
               {/* TODO: Update this for your university! */}
-              <a className="email-link" href="mailto:penn@hack4impact.org">
+              <a className="email-link" href="mailto:princeton@hack4impact.org">
                 princeton@hack4impact.org
               </a>
               .
@@ -22,11 +22,11 @@ function Footer() {
           </Col>
           <div className="col-md-1" />
           <div className="col-md-2 ">
-            <h4>About the org</h4>
+            <h4>About Us</h4>
             <ul>
               <li>
-                <Link href="/about">
-                  <a>About Us</a>
+                <Link href="/team">
+                  <a>Our Team</a>
                 </Link>
               </li>
               <li>

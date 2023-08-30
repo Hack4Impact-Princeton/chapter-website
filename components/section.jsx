@@ -10,11 +10,15 @@ const getBackground = (grey, darkgrey) => {
   return undefined;
 };
 
-const Section = ({ children, grey, darkgrey }) => (
+const Section = ({ children, grey, darkgrey, marginX, paddingX }) => (
   <section
-    className="typical-section"
+    className={`typical-section`}
     style={{
       background: getBackground(grey, darkgrey),
+      marginLeft: marginX ? marginX : 'auto',
+      marginRight: marginX ? marginX : 'auto',
+      paddingRight: paddingX ? paddingX : "0",
+      paddingLeft: paddingX ? paddingX : "0",
     }}
   >
     <div>
@@ -28,9 +32,11 @@ const Section = ({ children, grey, darkgrey }) => (
             }
           }
           .typical-section {
-            padding: 100px 0;
+            padding-top: 100px;
+            padding-bottom: 100px;
             margin: auto;
           }
+
         `}
       </style>
     </div>

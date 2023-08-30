@@ -1,84 +1,213 @@
-import MemberIcon from "../components/teampage/MemberIcon";
-import alpTeam, { execBoard } from "../utils/memberInfo";
-const TestComponent = () => {
-  return (
-    <main className="flex h-full w-full flex-col items-center">
-      <h1 className="m-10 text-5xl font-extrabold underline">Meet the Team</h1>
-      <div
-        id="execBoardDiv"
-        className="m-5 flex flex-col items-center justify-center rounded-md border border-black"
-      >
-        <h1 className="my-2 text-xl font-extrabold underline">
-          Executive Board
-        </h1>
-        <div
-          id="execBoardMembersDiv"
-          className="mx-1 grid h-fit w-full grid-cols-2 place-items-center gap-4 p-2 md:mx-2 md:grid-cols-4 lg:grid-cols-7"
-        >
-          {execBoard.map((member, index) => (
-            <MemberIcon
-              key={index}
-              name={member.name}
-              linkedin={member.linkedin}
-              headshotSrc={member.headshotSrc}
-              position={member.position}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="flex w-full flex-col items-center justify-between">
-        <div
-          id="teamsDiv"
-          className="flex w-full flex-col  items-center justify-center md:flex-row"
-        >
-          <div
-            id="alpDiv"
-            className="mx-5 mb-5 flex w-full flex-col items-center justify-center rounded-md border border-black lg:ml-20 lg:w-5/6"
-          >
-            <h1 className="my-2 text-xl font-extrabold underline">
-              African Library Project Team
-            </h1>
-            <div
-              id="alpMembersDiv"
-              className="mx-1 grid h-fit w-full grid-cols-2 place-items-center gap-4 bg-green-50 md:mx-2"
-            >
-              {alpTeam.map((member, index) => (
-                <MemberIcon
-                  key={index}
-                  name={member.name}
-                  linkedin={member.linkedin}
-                  headshotSrc={member.headshotSrc}
-                  position={member.position}
-                />
-              ))}
-            </div>
-          </div>
-          <div
-            id="njtreeDiv"
-            className="mx-5 mb-5 flex w-full flex-col items-center justify-center rounded-md border border-black lg:mr-20 lg:w-5/6"
-          >
-            <h1 className="my-2 text-xl font-extrabold underline">
-              NJ Tree Foundation Team
-            </h1>
-            <div
-              id="njtreeMembersDiv"
-              className="mx-1 grid h-fit w-full grid-cols-2 place-items-center gap-4 bg-blue-50 md:mx-2"
-            >
-              {alpTeam.map((member, index) => (
-                <MemberIcon
-                  key={index}
-                  name={member.name}
-                  linkedin={member.linkedin}
-                  headshotSrc={member.headshotSrc}
-                  position={member.position}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  );
-};
+import React from 'react';
+import GradientBanner from '../components/gradientBanner';
+import MissionSection from '../components/about/missionSection.jsx';
+import OurValues from '../components/about/ourValues';
+import Head from '../components/head';
+import Team from '../components/about/team';
+import fetchContent from '../utils/fetchContent';
 
-export default TestComponent;
+function AboutPage() {
+
+  // member information and structure
+  /* fields: {name: string, image: {url: string}, linkedin: string, classOf: number}
+  Not including: memberSlug - note, delete the a tag around the img in membericon*/
+  const customStyle = {
+  background: 'linear-gradient(white, var(--secondary-seafoam))',
+  padding: '80px 0',
+  paddingTop: 'calc(60px + var(--nav-height))',
+  '@media (max-width: 800px)': {
+    padding: '40px 0',
+    paddingTop: 'calc(40px + var(--nav-height))',
+  },
+};
+  const projectTeamMembers = [{
+    name: "Emilio Chan",
+    imageurl: '/images/headshots/Emilio_Chan.jpeg',
+    title: "Developer", 
+    projectTeam: "ALP",
+    linkedIn:"https://www.linkedin.com/in/emilio-chan-59051b223/",
+    classOf: 2025,
+  }, 
+    {
+     name: "Dylan Epstein-Gross",
+     imageurl: "/images/headshots/EpsteinGross_Dylan.JPG",
+     title: "Tech Lead | Developer",
+     projectTeam: "NJTree",
+     linkedIn: "https://www.linkedin.com",
+     classOf: 2026,
+   } 
+   ,
+   {
+    name: "Daisy Zhang",
+    imageurl: "/images/headshots/daisy_zhang.png",
+    title: "Developer",
+    projectTeam: "NJTree",
+    linkedIn: "https://www.linkedin.com",
+    classOf: 2026,
+  },
+   {
+    name: "Connor Brown",
+    imageurl: "/images/headshots/IMG_2243.PNG",
+    title: "Developer",
+    projectTeam: "NJTree",
+    linkedIn: "https://www.linkedin.com",
+    classOf: 2026,
+  }
+  ,
+   {
+    name: "Emily Luo",
+      imageurl: "/images/headshots/IMG_6369.heic",
+    title: "Product Manager | Developer",
+    projectTeam: "ALP",
+    linkedIn: "https://www.linkedin.com",
+    classOf: 2026,
+  }
+  ,
+   {
+    name: "Jessica Yan",
+      imageurl: "/images/headshots/Jessica_Yan.jpeg",
+    title: "Developer",
+    projectTeam: "Bootcamp",
+    linkedIn: "https://www.linkedin.com",
+    classOf: 2026,
+  }
+  
+]
+  const alumni = [{alumniOne: {
+    name: "test",
+    imageurl: '/images/<filename>',
+    linkedin:"https://www.linkedin.com/",
+    classOf: 2019,
+  }}]
+  const execBoard = [ 
+    {
+      name: "Suhani Balachandran",
+      imageurl: "/images/headshots/Emilio_Chan.jpeg",
+      title: "President",
+      linkedIn: "https://www.linkedin.com",
+      classOf: 2025,
+    },{
+    name: "Emilio Chan",
+    imageurl: '/images/headshots/Emilio_Chan.jpeg',
+    title: "Vice President", 
+    linkedIn: "https://www.linkedin.com/in/emilio-chan-59051b223/",
+    classOf: 2025,
+  },
+  {
+    name: "Willow Yang",
+    imageurl: "/images/headshots/Emilio_Chan.jpeg",
+    title: "Treasurer",
+    linkedIn: "https://www.linkedin.com",
+    classOf: 2025,
+  },
+{
+  name: "Matthew Drapkin",
+  imageurl: "/images/headshots/Emilio_Chan.jpeg",
+title: "Internal Outreach Chair",
+linkedIn: "https://www.linkedin.com",
+classOf: 2025,
+}, 
+{
+  name: "Gracy Bhardwaj",
+  imageurl: "/images/headshots/Emilio_Chan.jpeg",
+  title: "External Outreach Chair",
+  linkedIn: "https://www.linkedin.com",
+  classOf: 2026,
+}
+,
+{
+  name: "Derek Geng",
+  imageurl: "/images/headshots/Emilio_Chan.jpeg",
+title: "Membership Chair",
+linkedIn: "https://www.linkedin.com",
+classOf: 2026,
+}, 
+,
+{
+  name: "Maggie Wang",
+  imageurl: "/images/headshots/Emilio_Chan.jpeg",
+title: "Membership Chair",
+linkedIn: "https://www.linkedin.com",
+classOf: 2026,
+}, 
+
+]
+  return (
+    <>
+      <Head title="About Us" />
+      <GradientBanner
+        title="Meet Our Team"
+        subHeadline="Hack4Impact believes in technology’s huge potential to empower activists and humanitarians to create lasting and impactful social change. We work to foster the wider adoption of software as a tool for social good."
+        style= {customStyle}
+        arrow
+      />
+      {/* <MissionSection />
+      <OurValues/> */}
+      <Team members={projectTeamMembers} alumni={alumni} execBoard={execBoard} />
+    </>
+  );
+}
+
+export default AboutPage;
+
+// export async function getStaticProps() {
+//   const {
+//     pennWebsiteLayout: {
+//       chapterValuesCollection,
+//       execBoardCollection,
+//       membersCollection,
+//       alumniCollection,
+//     },
+//   } = await fetchContent(`
+//   fragment profile on PennMemberProfile{
+//     name
+//     title
+//     image {
+//       url
+//     } 
+//     linkedIn
+//     classOf
+//     urlSlug
+//   } 
+  
+//   {
+//     pennWebsiteLayout(id: "${process.env.LAYOUT_ENTRY_ID}") {
+//       chapterValuesCollection {
+//         items {
+//           header
+//           body {
+//             json
+//           }
+//           image {
+//             url
+//             description
+//           }
+//         }
+//       }
+//       execBoardCollection {
+//         items {
+//           ...profile
+//         }
+//       }
+//       membersCollection {
+//         items {
+//           ...profile
+//         }
+//       }
+//       alumniCollection {
+//         items {
+//           ...profile
+//         }
+//       }
+//     }
+//   }
+//   `);
+//   return {
+//     props: {
+//       values: chapterValuesCollection.items,
+//       members: membersCollection.items,
+//       alumni: alumniCollection.items,
+//       execBoard: execBoardCollection.items,
+//     },
+//   };
+// }

@@ -12,6 +12,7 @@ import Head from "../components/homepage/head";
 import Section from "../components/homepage/section";
 import { Container } from "reactstrap";
 import HeadBanner from "../components/homepage/headbanner";
+import MissionSection from "../components/about/missionSection";
 
 function Home(/*{ chapterLogos, previewProjects }*/) {
   return (
@@ -19,9 +20,10 @@ function Home(/*{ chapterLogos, previewProjects }*/) {
       <Head title="Hack4Impact" />
       <ToastContainer />
       {/*<HeadBanner />*/}
-      <div style={{paddingBottom:"150px"}}></div>
-      <Banner/>
-      <div style={{paddingBottom:"200px"}}></div>
+      <div style={{ paddingBottom: "150px" }}></div>
+      <Banner />
+      <div style={{ paddingBottom: "50px" }}></div>
+      <MissionSection />
       {/*<OurWorkSection />
       <Section lightblue>
         <Container>
@@ -31,7 +33,7 @@ function Home(/*{ chapterLogos, previewProjects }*/) {
         <br></br>
         <br></br>
   </Section>*/}
-      
+
       {/* <PartnerSection /> 
       <OtherChapters chapterLogos={chapterLogos} /> */}
     </>
