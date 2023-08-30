@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 function NavLink({ children, href, activeRoute, ariaLabel }) {
   return (
@@ -18,6 +18,10 @@ function NavLink({ children, href, activeRoute, ariaLabel }) {
         }
         .link:hover {
           color: var(--accent-orange);
+        }
+
+        .inactive {
+            font-size: 50px;
         }
       `}</style>
 

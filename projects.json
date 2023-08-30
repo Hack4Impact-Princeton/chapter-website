@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "African Library Project",
+    "description": "The African Library Project changes lives book by book, together with partners in Africa and North American volunteers, to create, improve, and sustain libraries in African communities.",
+    "thumbnail": "https://www.africanlibraryproject.org/wp-content/uploads/2020/01/79427502_10156306500277303_6264571381627748352_o.jpg",
+    "url": "https://www.africanlibraryproject.org/"
+  },
+  {
+    "id": 2,
+    "title": "NJ Tree Foundation",
+    "description": "The NJ Tree Foundation is a statewide nonprofit organization dedicated to planting trees in New Jersey’s most urban neighborhoods, where the need is greatest.",
+    "thumbnail": "https://process.filestackapi.com/resize=width:600,height:315,fit:max/quality=value:90/5X0jxZ8JRGucrQtN2vCG",
+    "url": "https://www.facebook.com/njtrees/"
+  }
+]

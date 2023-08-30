@@ -1,57 +1,33 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Spring, config } from 'react-spring';
+// import { Spring, config } from 'react-spring/renderprops.cjs';
 import ActionButton from '../actionButton';
-
 const Banner = () => (
   <>
     <Container fluid className="container">
-      <div className="bannerCont">
+      <div className='bannerCont'>
         <Row className="d-flex align-items-center">
-          <Spring
-            config={{ delay: 100, ...config.slow }}
-            from={{ opacity: 0, transform: 'translate3d(-100px,0,0)' }}
-            to={{ opacity: 100, transform: 'translate3d(0,0px,0)' }}>
-            {(props) => (
-              <Col md="7" style={{ ...props }}>
-                <img src="/images/banner_sample.svg" alt="" />
-              </Col>
-            )}
-          </Spring>
+          <Col md="7">
+            <img src="/images/banner_sample.svg" alt="" />
+          </Col>
           <Col md="5">
-            <Spring
-              config={{ delay: 450, ...config.slow }}
-              from={{ opacity: 0, transform: 'translate3d(-100px,0,0)' }}
-              to={{ opacity: 100, transform: 'translate3d(0,0px,0)' }}>
-              {(props) => <h1 style={props}>We build software for nonprofits.</h1>}
-            </Spring>
-            <Spring
-              config={{ delay: 450, ...config.slow }}
-              from={{ opacity: 0, transform: 'translate3d(-100px,0,0)' }}
-              to={{ opacity: 100, transform: 'translate3d(0,0px,0)' }}>
-              {(props) => (
-                <p style={props} className="sub-headline">
-                  We empower engineers, designers, activists, and humanitarians to create lasting
-                  and impactful social change. If you're a student or a nonprofit, we'd love to get
-                  in touch!
-                </p>
-              )}
-            </Spring>
-            <Spring
-              config={{ delay: 500, ...config.slow }}
-              from={{ opacity: 0, transform: 'translate3d(-100px,0,0)' }}
-              to={{ opacity: 100, transform: 'translate3d(0,0px,0)' }}>
-              {(props) => (
-                <div style={props}>
-                  <ActionButton className="mr-3" link="/apply">
-                    Apply
-                  </ActionButton>
-                  <ActionButton white link="/about">
-                    Learn More
-                  </ActionButton>
-                </div>
-              )}
-            </Spring>
+            <h1>In the Nation’s Service and In the Service of Humanity</h1>
+            <br></br>
+            <h4 style={{fontWeight:"bold"}}>We build software for nonprofits.</h4>
+            <p>
+              We empower engineers, designers, activists, and humanitarians to
+              create lasting and impactful social change. If you're a student or
+              a nonprofit, we'd love to get in touch!
+            </p>
+            <br></br>
+            <div>
+              <ActionButton className="mr-3" link="/apply">
+                Apply
+              </ActionButton>
+              <ActionButton white link="/about">
+                Learn More
+              </ActionButton>
+            </div>
           </Col>
         </Row>
       </div>

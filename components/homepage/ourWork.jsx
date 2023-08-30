@@ -1,22 +1,21 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Spring, Trail } from "react-spring";
-import Section from "../section";
+import Section from "./section";
 import ProjectContainer from "../homePageProject";
 import ActionLink from "../actionLink";
+import Projects from "../../projects.json";
 
-function OurWorkSection({ projects }) {
-  const projectContainers = projects.map(
-    ({ title, description, thumbnail, urlSlug }) => (
-      <ProjectContainer
-        title={title}
-        description={description}
-        thumbnail={thumbnail}
-        urlSlug={urlSlug}
-        key={urlSlug}
-      />
-    )
-  );
+function OurWorkSection() {
+  const styles = {
+    fontWeight: 400,
+    lineHeight: 1.2,
+    letterSpacing: "normal",
+    fontSize: "15px",
+    margin: "auto",
+    borderBottom: "1px solid blue",
+    marginTop: "40px",
+  };
 
   return (
     <Section>
@@ -27,12 +26,18 @@ function OurWorkSection({ projects }) {
           to={{ opacity: 1 }}
         >
           {(props) => (
-            <div style={props} id="our-work-title-box">
+            <div
+              style={{ textAlign: "center", margin: "0 20px 40px 20px" }}
+              id="our-work-title-box"
+            >
               <h2 className="title text-center">
                 We believe in using tech for good.
               </h2>
-              <p className="subtitle text-center">
-                Each semester, we work with three to five non-profits with the
+              <p
+                className="subtitle text-center"
+                style={{ paddingTop: "10px", color: "var(--gray)" }}
+              >
+                Each semester, we work with one to two non-profits with the
                 opportunity to build a great product that solves a core need. We
                 work in small groups led by a product manager and technical lead
                 to scope and develop the application, taking into account our
@@ -42,53 +47,35 @@ function OurWorkSection({ projects }) {
           )}
         </Spring>
 
-        <div className="project-showcase-box">
+        <div
+          className="project-showcase-box"
+          sx={{ padding: "10px 10px 5px 10px" }}
+        >
           <Row className="d-flex justify-content-center">
-            <Trail
-              items={projectContainers}
-              keys={({ urlSlug }) => urlSlug}
-              config={{ delay: 1200 }}
-              from={{ opacity: 0, transform: "translate3d(0,200px,0)" }}
-              to={{ opacity: 100, transform: "translate3d(0,0px,0)" }}
-            >
-              {/* eslint-disable react/display-name */}
-              {(item) => (props) =>
-                (
-                  <Col key={item.key} sm="4" style={props}>
-                    {item}
-                  </Col>
-                )}
-              {/* eslint-enable react/display-name */}
-            </Trail>
+            {Projects.map((project) => {
+              return (
+                <Col key={project.id}>
+                  <ProjectContainer
+                    title={project.title}
+                    description={project.description}
+                    thumbnail={project.thumbnail}
+                    url={project.url}
+                    key={project.id}
+                  />
+                </Col>
+              );
+            })}
           </Row>
         </div>
         <Row style={{ paddingTop: "5px" }}>
-          <ActionLink text="View our other projects" link="/projects" />
+          <ActionLink
+            text="View our other projects"
+            link="/projects"
+            style={styles}
+          />
         </Row>
       </Container>
-      <style jsx>{`
-        .subtitle {
-          padding-top: 10px;
-          color: var(--gray);
-          letter-spacing: 1px;
-        }
-        #our-work-title-box {
-          text-align: center;
-          margin: 0 20px 40px 20px;
-        }
-        .project-showcase-box {
-          padding: 10px 10px 5px 10px;
-        }
-        .link {
-          font-weight: 400;
-          line-height: 1.2;
-          letter-spacing: normal;
-          font-size: 15px;
-          margin: auto;
-          border-bottom: 1px solid var(--primary-blue);
-          margin-top: 40px;
-        }
-      `}</style>
+      <style jsx>{``}</style>
     </Section>
   );
 }

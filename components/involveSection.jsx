@@ -1,8 +1,8 @@
-import React from 'react';
-import { Row, Col } from 'reactstrap';
-import BlockQuote from './blockQuote';
-import ActionButton from './actionButton';
-import Link from 'next/link';
+import React from "react";
+import { Row, Col } from "reactstrap";
+import BlockQuote from "./blockQuote";
+import ActionButton from "./actionButton";
+import Link from "next/link";
 
 const InvolveSection = () => (
   <Row>
@@ -11,22 +11,24 @@ const InvolveSection = () => (
         <h3 className="text-title text-center">Students</h3>
         <Link href="/apply/students">
           <a>
-            <img src="/images/retreat-2020.jpg" className="img-fluid" alt="Sp18 team" />
+            <img src="/images/sp23.jpg" className="img-fluid" alt="Sp23 team" />
           </a>
         </Link>
       </div>
       <Row>
         <p
           style={{
-            padding: '38px 0 35px 0',
-          }}>
-          Are you passionate about software and Social Impact? Are you looking to join a unique and
-          close-knit community? Join Us! Our mission provides a distinct experience to develop
-          technical skills and interact with nonprofit clients all while applying your skills to
+            padding: "38px 0 35px 0",
+          }}
+        >
+          Are you passionate about software and Social Impact? Are you looking
+          to join a unique and close-knit community? Join Us! Our mission
+          provides a distinct experience to develop technical skills and
+          interact with nonprofit clients all while applying your skills to
           impact real lives.
         </p>
 
-        <div className="text-center">
+        <div className="text-center" sx={{ justifyContent: "center" }}>
           <ActionButton white link="/apply/students">
             Join Us!
           </ActionButton>
@@ -39,21 +41,22 @@ const InvolveSection = () => (
         <Link href="/join/students">
           <a>
             <img
-              src="/images/philly_food_finder.jpg"
+              src="/images/partner.png"
               className="img-fluid"
-              alt="Philadelphia Mayor’s Recognition"
+              alt="Partner with Us"
             />
           </a>
         </Link>
         <Row>
-          <BlockQuote
-            text="Working with Hack4Impact was easy, efficient and incredibly
-              productive. They were quick to understand what we were looking to
-              achieve and made the app even better and simpler to use than what
-              I had imagined."
-            author="- Bernardo H. Motta, Ph.D."
-            position="Faculty Coordinator of the USFSP Neighborhood News Bureau"
-          />
+          <p
+          style={{
+            padding: "35px 0 35px 0",
+          }}
+        >
+            Are you a nonprofit struggling without certain software? 
+            Are you in a niched field and you have a clear idea of your problem and think tech can help you? 
+            Hack4Impact is here for you. Reach out to us and we'd love to work with you on a project!
+        </p>
           <div className="text-center">
             <ActionButton white link="/join/nonprofits">
               Work with us!
