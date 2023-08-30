@@ -9,7 +9,7 @@ const InvolveSection = () => (
     <Col md="5">
       <div className="involved-container">
         <h3 className="text-title text-center">Students</h3>
-        <Link href="/apply/students">
+        <Link href="/join/students">
           <a>
             <img src="/images/sp23.jpg" className="img-fluid" alt="Sp23 team" />
           </a>
@@ -29,7 +29,7 @@ const InvolveSection = () => (
         </p>
 
         <div className="text-center" sx={{ justifyContent: "center" }}>
-          <ActionButton white link="/apply/students">
+          <ActionButton white link="/join/students">
             Join Us!
           </ActionButton>
         </div>
@@ -38,7 +38,7 @@ const InvolveSection = () => (
     <Col md="5" className="offset-md-2">
       <div className="involved-container">
         <h3 className="text-title text-center">Nonprofits</h3>
-        <Link href="/join/students">
+        <Link href="/join/nonprofits">
           <a>
             <img
               src="/images/partner.png"
@@ -49,14 +49,14 @@ const InvolveSection = () => (
         </Link>
         <Row>
           <p
-          style={{
-            padding: "35px 0 35px 0",
-          }}
-        >
-            Are you a nonprofit struggling without certain software? 
-            Are you in a niched field and you have a clear idea of your problem and think tech can help you? 
+            style={{
+              padding: "35px 0 35px 0",
+            }}
+          >
+            Are you a nonprofit struggling without certain software?
+            Are you in a niched field and you have a clear idea of your problem and think tech can help you?
             Hack4Impact is here for you. Reach out to us and we'd love to work with you on a project!
-        </p>
+          </p>
           <div className="text-center">
             <ActionButton white link="/join/nonprofits">
               Work with us!
