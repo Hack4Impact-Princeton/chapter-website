@@ -8,7 +8,7 @@ import { recruitmentTimeline } from "../../utils/recruitmentTimeline"
 const StudentsPage = ({ }) => {
     return (
         <>
-            <Head title="H4I Apply | Students" />
+            <Head title="Join Us | Students" />
             <GradientBanner
                 title={'Students'}
                 subHeadline={

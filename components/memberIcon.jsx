@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Card } from 'reactstrap';
-import Image from 'next/image';
 const MemberIcon = ({ name, title, imageurl, linkedIn }) => {
   console.log("name", name)
   console.log("title", title)
@@ -10,8 +9,10 @@ const MemberIcon = ({ name, title, imageurl, linkedIn }) => {
     <Col>
       <Card className="border-0 member-icon">
         <div className="text-center">
-          {/* <img src={imageurl} alt={name} className="rounded-circle img-fluid team-icon" /> */}
-          <Image src={imageurl} alt={name} width="120px" height="120px" style={{ borderRadius: "50%" }} className=" team-icon" />
+          <a href={linkedIn} target='_blank'>
+            {/* <img src={imageurl} alt={name} className="rounded-circle img-fluid team-icon" /> */}
+            <img src={imageurl} alt={name} width="120px" height="120px" style={{ borderRadius: "50%" }} className=" team-icon" />
+          </a>
         </div>
       </Card>
 

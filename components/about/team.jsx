@@ -24,7 +24,7 @@ function Team({ members, alumni, execBoard }) {
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col sm="12" xs="12" md="6" lg="6" xl="6" >
+          <Col sm="12" xs="12" md="12" lg="12" xl="12" >
             <h3 style={{ textAlign: "center" }}>Bootcampers</h3>
             <ProjectTeam members={members} team={"Bootcamp"} />
           </Col>

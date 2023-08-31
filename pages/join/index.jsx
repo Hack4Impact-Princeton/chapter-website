@@ -17,7 +17,7 @@ function ApplyPage() {
   };
   return (
     <>
-      <Head title="Apply" />
+      <Head title="Join Us" />
       <GradientBanner
         title="Join Us"
         subHeadline="We're open to students and nonprofits of all backgrounds, no matter your project or technical expertise."

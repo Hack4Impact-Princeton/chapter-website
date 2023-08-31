@@ -91,7 +91,7 @@ function NonProfits({
 
     return (
         <>
-            <Head title="H4I Apply | Nonprofits" />
+            <Head title="Join Us | Nonprofits" />
             <GradientBanner
                 title={'Nonprofit Organizations'}
                 subHeadline={
