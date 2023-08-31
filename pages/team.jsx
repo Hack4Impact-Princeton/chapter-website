@@ -51,7 +51,7 @@ const projectTeamMembers = [{
   ,
 {
   name: "Emily Luo",
-  imageurl: "/images/headshots/IMG_6369.heic",
+  imageurl: "/images/headshots/Emily_Luo.PNG",
   title: "Product Manager | Developer",
   projectTeam: "ALP",
   linkedIn: "https://www.linkedin.com",
@@ -65,6 +65,14 @@ const projectTeamMembers = [{
   projectTeam: "Bootcamp",
   linkedIn: "https://www.linkedin.com",
   classOf: 2026,
+},
+{
+  name: "William Zhang",
+  imageurl: "/images/headshots/William_Zhang.jpeg",
+  title: "Develope",
+  projectTeam: "ALP",
+  linkedIn: "https://www.linkedin.com",
+  classOf: 2026
 }
 
 ]
@@ -106,7 +114,7 @@ const execBoard = [
   },
   {
     name: "Gracy Bhardwaj",
-    imageurl: "/images/headshots/Emilio_Chan.jpeg",
+    imageurl: "/images/headshots/Gracy_Bhardwaj.png",
     title: "External Outreach Chair",
     linkedIn: "https://www.linkedin.com",
     classOf: 2026,
