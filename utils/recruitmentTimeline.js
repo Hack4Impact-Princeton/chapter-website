@@ -1,7 +1,7 @@
 export const recruitmentTimeline = [
   {
     title: "Activities Fair:",
-    subtitle: "Friday, September 9, 12pm-3pm at Dillon Gym",
+    subtitle: "Friday, September 8, 12pm-3pm at Dillon Gym",
     description:
       "Meet some of the team, learn about our work and mission, chat abou tech and social good, sign up for our listserv.",
       imageurl: "/images/student-timeline/education.svg",
