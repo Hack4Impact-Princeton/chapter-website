@@ -67,13 +67,13 @@ function OurWorkSection() {
             })}
           </Row>
         </div>
-        <Row style={{ paddingTop: "5px" }}>
+        {/*<Row style={{ paddingTop: "5px" }}>
           <ActionLink
             text="View our other projects"
             link="/projects"
             style={styles}
           />
-        </Row>
+          </Row>*/}
       </Container>
       <style jsx>{``}</style>
     </Section>
