@@ -15,28 +15,28 @@ export const recruitmentTimeline = [
     },
   {
     title: "Developer Application Due:",
-    subtitle: "Date and Time TBD",
+    subtitle: "Saturday, Sept. 16, 11:59pm",
     description:
-      "Written application must be submitted by 11:59pm on TBD to be considered",
+      "Written application must be submitted by 11:59pm on Saturday, September 16th to be considered",
       imageurl:"/images/student-timeline/contract.svg",
   },
   {
     title: "Designer Application Due:",
-    subtitle: "Date and Time TBD",
+    subtitle: "Saturday, Sept. 16, 11:59pm",
     description:
-      "Written application must be submitted by 11:59pm on TBD to be considered",
+      "Written application must be submitted by 11:59pm on Saturday, September 16th to be considered",
       imageurl:"/images/student-timeline/contract.svg",
   },
   {
     title: "Developer Interviews:",
-    subtitle: "Week of TBD",
+    subtitle: "Week of September 18th-24th",
     description:
       "Developer Interviews usually take around 45 minutes and consist of two components. The first is a discussion about your resume/your experiences, your passion for social good, and is like a 'behavioral' interview. The second asks you to demonstrate you problem-solving skills.",
     imageurl: "/images/student-timeline/interview.svg",
   },
   {
     title: "Designer Interviews:",
-    subtitle: "Week of TBD",
+    subtitle: "Week of September 18th-24th",
     description: "",
     imageurl: "/images/student-timeline/interview.svg",
   },
