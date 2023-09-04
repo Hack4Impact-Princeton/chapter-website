@@ -3,14 +3,14 @@ export const recruitmentTimeline = [
     title: "Activities Fair:",
     subtitle: "Friday, September 8, 12pm-3pm at Dillon Gym",
     description:
-      "Meet some of the team, learn about our work and mission, chat abou tech and social good, sign up for our listserv.",
+      "Meet some of the team, learn about our work and mission, chat about tech and social good, and sign up for our listserv.",
       imageurl: "/images/student-timeline/education.svg",
     },
   {
     title: "Open House:",
-    subtitle: "Saturday, September 10, location and time TBD",
+    subtitle: "Saturday, September 9, location and time TBD",
     description:
-      "Find out more about what we do, learn about what it's like to be a member of Hack4Impact Princeton, ask questions.",
+      "Find out more about what we do, learn about what it's like to be a member of Hack4Impact Princeton, ask any questions you may have.",
     imageurl: "/images/student-timeline/education.svg"
     },
   {
@@ -37,8 +37,7 @@ export const recruitmentTimeline = [
   {
     title: "Designer Interviews:",
     subtitle: "Week of TBD",
-    description:
-    "Designer Interviews usually last around x minutes. I don't know what would go into a designer interview at all so here I'm just going to put a lorem ipsum lorem ipsum lorem ipsum",
+    description: "",
     imageurl: "/images/student-timeline/interview.svg",
   },
 ];

@@ -26,7 +26,7 @@ const StudentsPage = ({ }) => {
                                 height="60px"
                             />
                             <h3 style={{ fontWeight: 800 }} className="mt-2">Developer</h3>
-                            <p>Application: Due TBD</p>
+                            <p>Application due Saturday, Sept. 16, 11:59pm</p>
                             <p style={{ textAlign: "left", marginBottom: 25 }}>
                                 Developers will complete a 7-session bootcamp this fall to ensure
                                 that everyone is starting from an appropriate skill baseline. So
@@ -36,7 +36,7 @@ const StudentsPage = ({ }) => {
                                 bootcamp means developers will be equipped to work on projects
                                 this spring.
                             </p>
-                            <ActionButton link="https://google.com">
+                            <ActionButton link="https://forms.gle/Z58jvN6uhzm7uPo28">
                                 Apply
                             </ActionButton>
                         </Col>
@@ -47,7 +47,7 @@ const StudentsPage = ({ }) => {
                                 height="60px"
                             />
                             <h3 className="mt-2">UI/UX Designer</h3>
-                            <p>Application: Due TBD</p>
+                            <p>Application due Saturday, Sept. 16, 11:59pm</p>
                             <p style={{ textAlign: "left", marginBottom: 25 }}>
                                 UI/UX designers work with Product Managers (PM's) to determine the
                                 look and flow of an application. Starting with working from a PM’s
@@ -56,7 +56,7 @@ const StudentsPage = ({ }) => {
                                 semester, design work will be concentrated during the beginning of
                                 the semester, then decrease in workload after the midpoint.
                             </p>
-                            <ActionButton link="https://google.com">
+                            <ActionButton link="https://forms.gle/Yz8Q28L125fFjtFCA">
                                 Apply
                             </ActionButton>
 

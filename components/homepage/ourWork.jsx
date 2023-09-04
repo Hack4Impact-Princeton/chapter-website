@@ -55,13 +55,15 @@ function OurWorkSection() {
             {Projects.map((project) => {
               return (
                 <Col key={project.id}>
-                  <ProjectContainer
-                    title={project.title}
-                    description={project.description}
-                    thumbnail={project.thumbnail}
-                    url={project.url}
-                    key={project.id}
-                  />
+                  <a href={project.url} target="_blank">
+                    <ProjectContainer
+                      title={project.title}
+                      description={project.description}
+                      thumbnail={project.thumbnail}
+                      url={project.url}
+                      key={project.id}
+                    />
+                  </a>
                 </Col>
               );
             })}
