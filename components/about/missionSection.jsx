@@ -61,7 +61,7 @@ const MissionSection = () => (
 
         <Row>
           <Col md="12" className="text-center">
-            <h2 className="project-detail-title" style={{ marginTop: 35 }}>Our Values</h2>
+            <h2 className="project-detail-title" style={{ marginTop: 0 }}>Our Values</h2>
           </Col>
         </Row>
         <Row>
