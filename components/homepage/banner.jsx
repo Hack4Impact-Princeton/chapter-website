@@ -22,7 +22,7 @@ const Banner = () => (
             <br></br>
             <div>
               <ActionButton className="mr-3" link="/join">
-                Apply
+                Join Us
               </ActionButton>
               <ActionButton white link="/team">
                 Our Team
