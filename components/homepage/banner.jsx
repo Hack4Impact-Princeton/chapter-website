@@ -21,7 +21,7 @@ const Banner = () => (
             </p>
             <br></br>
             <div>
-              <ActionButton className="mr-3" link="/apply">
+              <ActionButton className="mr-3" link="/join">
                 Apply
               </ActionButton>
               <ActionButton white link="/team">
