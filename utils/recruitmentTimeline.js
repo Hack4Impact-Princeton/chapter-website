@@ -8,7 +8,7 @@ export const recruitmentTimeline = [
     },
   {
     title: "Open House:",
-    subtitle: "Saturday, September 9, location and time TBD",
+    subtitle: "Saturday, Sept. 9, 1:30-2:30 pm in Frist 309",
     description:
       "Find out more about what we do, learn about what it's like to be a member of Hack4Impact Princeton, ask any questions you may have.",
     imageurl: "/images/student-timeline/education.svg"
@@ -31,13 +31,19 @@ export const recruitmentTimeline = [
     title: "Developer Interviews:",
     subtitle: "Week of September 18th-24th",
     description:
-      "Developer Interviews usually take around 45 minutes and consist of two components. The first is a discussion about your resume/your experiences, your passion for social good, and is like a 'behavioral' interview. The second asks you to demonstrate you problem-solving skills.",
+      "Developer Interviews usually take around an hour and consist of two components. The first is a discussion about your resume/your experiences, your passion for social good, and is like a 'behavioral' interview. The second asks you to demonstrate you problem-solving skills.",
     imageurl: "/images/student-timeline/interview.svg",
   },
   {
     title: "Designer Interviews:",
-    subtitle: "Week of September 18th-24th",
-    description: "",
+    subtitle: "Week of September 18th-23th",
+    description: "You'll be asked about your design ideas, philosophy, and experience; face some practical riddles to test your problem solving; and be tasked with a practical design problem",
     imageurl: "/images/student-timeline/interview.svg",
+  },
+  {
+    title: "Application Decisions",
+    subtitle: "Sunday, September 24th",
+    description: "",
+    imageurl: "/images/student-timeline/education.svg",
   },
 ];
