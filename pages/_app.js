@@ -4,15 +4,13 @@ import Nav from '../components/navbar';
 import { PageTransition } from 'next-page-transitions';
 
 function App({ Component, pageProps }) {
-  const router = useRouter();
-  const shouldRenderNavAndFooter = router.pathname !== '/'
   return (
     <div>
-      {shouldRenderNavAndFooter && <Nav/>}
+      <Nav/>
       <PageTransition timeout={300} classNames="page-transition">
         <Component {...pageProps} />
       </PageTransition>
-      {shouldRenderNavAndFooter && <Footer />}
+      <Footer />
       <style jsx global>{`
         .page-transition-enter {
           opacity: 0;
