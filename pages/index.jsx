@@ -17,7 +17,7 @@ import MissionSection from "../components/about/missionSection";
 function Home(/*{ chapterLogos, previewProjects }*/) {
   return (
     <>
-      <Head title="Hack4Impact" />
+      <Head title="Hack4Impact - Princeton University" />
       <ToastContainer />
       {/*<HeadBanner />*/}
       <div style={{ paddingBottom: "150px" }}></div>
